@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap');
+ 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu{
+    background-image:url(./../img/pexels-photo-306070.jpeg);
+    background-size: cover;
+    background-repeat:no-repeat  ;
+    background-attachment:fixed ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.menu ul li{
+    margin-right: 110px;
+    margin-left: 40px;
+}
+.menu_c{
+    background-image:url(./../img/pexels-photo-306070.jpeg);
+    background-size: cover;
+    background-repeat:no-repeat  ;
+    background-attachment:fixed ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.menu_c ul li{
+    margin-right: 110px;
+    margin-left: 40px;
+}
+
+.logo{
+    margin-right: 200px;
+}
+
+.titulo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    }
+    
+
+.caja{
+    width: 500px;
+    height: 280px;
+    background-color: rgb(213, 236, 189);
+    margin: 20px;
+    margin-left: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+.caja_2{
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    height: 280px;
+    background-color: rgb(213, 236, 189);
+    margin: 20px;
+    margin-left: 700px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.caja h1{
+    text-align: center;
+   
+    
+}
+ 
+.caja h2{
+    text-align: center;
+   
+}
+
+.foto{
+    Justify-content:flex-end;
+    position: absolute;
+    left: 800px;
+    top: 10px;
+    bottom: 10px;
+    margin-top: 250px;
+}
+ 
+.foto_2{
+    Justify-content:flex-end;
+    position: absolute;
+    right: 840px;
+    top: 10px;
+    bottom: 10px;
+    margin-top: 1450px;
+}
+
+h4{
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;  
+    margin-bottom: 30px;
+    color: black;
+}
+h4::after,h4::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+h4::before{
+    left: -410px;
+}
+h4::after{
+    right:-410px;
+}
+footer a{
+    display: contents;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(245, 167, 180);
+    text-align: center;
+}
+
+body{
+    background-color: rgb(236, 201, 207);
+    background-attachment: fixed;
+}
+
+.texto{
+    font-family: 'Roboto', sans-serif; 
+    color: black;
+    
+}
+
+
+.cuerpo{
+    background-color: rgb(213, 236, 189);
+}
+
+.tamaño{
+    margin-top: 80px;
+    margin-bottom: 200px;
+    margin-left: 120px;
+}
+
+
+ 
+.redes{
+    margin: 70px;
+    bottom: 70px;
+    font-family:'Roboto', sans-serif;  
+    text-align: center;
+ 
+}
+
+
+.titulo_2{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+.index{
+    background-image: url("./../img/estrella.gif");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.logo{
+    margin-left: 400px;
+    margin-top: 0px;
+}
+
+.nombre{
+    color: black;
+    font-size: 80px;
+}
+
+.opciones a{
+    cursor: default;
+    transition: color 300ms;
+    cursor: pointer;
+    font-size: 30px;
+}
+ 
+.opciones a:hover{
+    color:  rgb(245, 167, 180);
+}
+
+.galeria{
+    gap: 20px;
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boton{
+    font-size: 20px;
+}
+
+.boton_2{
+    margin-top: 10px;
+}
+
+.tarjeta{
+    background-color: rgb(236, 201, 207);
+}
+ 
+.tarjeta{
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+}
+.tarjetas{
+    background-color: rgb(213, 236, 189);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+ 
+.tarjeta_texto{
+    font-family:'Roboto', sans-serif;  
+    text-align: center;
+ 
+}
+ 
+ 
+.tarjeta_titulo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+ 
+.tarjeta_imagen{
+    width: 100%;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    
+}
+.right{
+    background-color: rgb(213, 236, 189);
+}
+
+.mensaje{
+    margin-top: 15px;
+    margin-right: 80px;
+    margin-left: 10px;
+}
