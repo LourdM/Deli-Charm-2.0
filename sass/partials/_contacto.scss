@@ -1,0 +1,23 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    .redes{
+        margin: 70px;
+        bottom: 70px;
+        font-family:$fontroboto;  
+        text-align: center;
+     
+    }   
+}
+
+.right{
+    background-color:$secondaryColor;
+}
+
+.mensaje{
+    margin-top: 15px;
+    margin-right: 80px;
+    margin-left: 10px;
+}

@@ -1,0 +1,495 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Dancing Script";
+}
+
+body {
+  background-color: rgb(236, 201, 207);
+  background-attachment: fixed;
+}
+
+.menu {
+  background-image: url(./../img/pexels-photo-306070.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Dancing Script";
+}
+.menu ul li {
+  margin-right: 110px;
+  margin-left: 40px;
+}
+
+.m_c {
+  margin-bottom: 0px;
+}
+
+.caja {
+  width: 500px;
+  height: 280px;
+  background-color: rgb(213, 236, 189);
+  margin: 20px;
+  margin-left: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0, 10s;
+          animation-delay: 0, 10s;
+}
+.caja .caja h1 {
+  text-align: center;
+}
+.caja .titulo {
+  font-family: "Dancing Script";
+  font-size: 40px;
+  text-align: center;
+}
+.caja .texto {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.foto {
+  Justify-content: flex-end;
+  position: absolute;
+  left: 800px;
+  top: 250px;
+  bottom: 10px;
+  -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.carrusel {
+  -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.caja_2 {
+  margin-left: 700px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.caja_2 .caja h2 {
+  text-align: center;
+}
+
+.foto_2 {
+  left: 100px;
+  top: 10px;
+  margin-top: 1450px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.titulo {
+  font-family: "Dancing Script";
+  font-size: 40px;
+  text-align: center;
+}
+
+.titulo_2 {
+  font-family: "Dancing Script";
+  margin-top: 30px;
+  font-size: 50px;
+  text-align: center;
+  -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0, 10s;
+          animation-delay: 0, 10s;
+}
+
+.tarjeta {
+  display: flex;
+  padding: 60px;
+  gap: 40px;
+  background-color: rgb(236, 201, 207);
+}
+.tarjeta .tarjetas {
+  background-color: rgb(213, 236, 189);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.tarjeta .tarjeta_imagen {
+  width: 100%;
+}
+.tarjeta .tarjeta_titulo {
+  font-family: "Dancing Script";
+  font-size: 40px;
+  text-align: center;
+}
+.tarjeta .tarjeta_texto {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.tarjetas a:hover {
+  filter: blur(2px);
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+.box img {
+  width: 75vw;
+  max-height: 70vh;
+}
+
+.box:target {
+  transform: scale(1);
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.tamaño {
+  margin-top: 80px;
+  margin-bottom: 200px;
+  margin-left: 120px;
+  -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.tamaño .cuerpo {
+  background-color: rgb(213, 236, 189);
+}
+.tamaño .boton {
+  font-size: 20px;
+}
+.tamaño .boton_2 {
+  margin-top: 10px;
+}
+
+.t_1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.t_2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.t_3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.contenedor .redes {
+  margin: 70px;
+  bottom: 70px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.right {
+  background-color: rgb(213, 236, 189);
+}
+
+.mensaje {
+  margin-top: 15px;
+  margin-right: 80px;
+  margin-left: 10px;
+}
+
+.index {
+  background-image: url("./../img/estrella.gif");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.index .opciones a {
+  cursor: default;
+  transition: color 300ms;
+  cursor: pointer;
+  font-size: 30px;
+}
+.index .opciones a:hover {
+  color: rgb(245, 167, 180);
+}
+
+.logo {
+  margin-left: 400px;
+  margin-top: 0px;
+}
+
+.nombre {
+  color: black;
+  font-size: 80px;
+}
+footer {
+  background-color: rgb(245, 167, 180);
+  text-align: center;
+}
+
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.scale-in-hor-left {
+  -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-hor-left {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-left {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+}
+.scale-in-hor-right {
+  -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-hor-right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index {
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .logo {
+    margin-left: 120px;
+  }
+  .caja {
+    margin-left: 130px;
+    margin-top: 50px;
+  }
+  .foto {
+    left: 183px;
+    margin-top: 260px;
+  }
+  .carrusel {
+    margin-top: 500px;
+  }
+  .caja_2 {
+    margin-left: 130px;
+    margin-top: 50px;
+  }
+  .foto_2 {
+    margin-top: 1840px;
+    right: 183px;
+  }
+  footer {
+    margin-top: 500px;
+  }
+  .tarjeta {
+    display: inline;
+  }
+  .tarjetas {
+    width: 80%;
+    margin-left: 55px;
+    margin-bottom: 50px;
+    flex: 1;
+  }
+  .tamaño {
+    margin-left: 240px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-left: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .index {
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .caja {
+    margin-top: 60px;
+    margin-left: 18px;
+    width: 450px;
+    height: 250px;
+  }
+  .foto {
+    left: 45px;
+    margin-top: 240px;
+  }
+  .carrusel {
+    margin-top: 500px;
+  }
+  .caja_2 {
+    width: 450px;
+    height: 250px;
+    margin-left: 18px;
+    margin-top: 55px;
+  }
+  .foto_2 {
+    right: 34px;
+    margin-top: 1770px;
+  }
+  footer {
+    margin-top: 500px;
+  }
+  .tamaño {
+    margin-left: 103px;
+  }
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=estilo.css.map */

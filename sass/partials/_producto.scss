@@ -1,0 +1,86 @@
+.titulo_2{
+    font-family:$fontdancingscript;
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 0,10s;
+}
+
+.tarjeta{
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+     background-color: rgb(236, 201, 207);
+
+    .tarjetas{
+        background-color: $secondaryColor;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+        -webkit-animation:swing-in-top-fwd .8s cubic-bezier(.175,.885,.32,1.275) both;
+        animation:swing-in-top-fwd .7s cubic-bezier(.175,.885,.32,1.275) both;
+    }
+     
+    .tarjeta_imagen{
+    width: 100%;
+     }
+
+     .tarjeta_titulo{
+        font-family:$fontdancingscript;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .tarjeta_texto{
+        font-family:$fontroboto;  
+        text-align: center;
+     
+    }
+    
+}
+
+
+.tarjetas a:hover{
+    filter: blur(2px);
+}
+.box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.box img{
+    width: 75vw;
+    max-height: 70vh;
+}
+.box:target{
+    transform: scale(1);
+}
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}

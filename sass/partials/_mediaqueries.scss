@@ -1,0 +1,101 @@
+@media screen and (max-width: 768px){
+    .index{
+        background-size: 100%;
+        background-size: cover;
+        background-repeat:no-repeat  ;
+        background-attachment:fixed ;
+    }
+    .logo{
+        margin-left: 120px;
+    }
+
+    .caja{
+        margin-left: 130px;
+        margin-top: 50px;
+    }
+    .foto{
+        left: 183px;
+        margin-top: 260px;
+    }
+    .carrusel{
+        margin-top: 500px;
+    }
+    .caja_2{
+        margin-left: 130px;
+        margin-top: 50px;
+    }
+    .foto_2{
+        margin-top: 1840px;
+        right: 183px;
+    }
+    footer{
+        margin-top: 500px;
+    }
+    .tarjeta{
+        display:inline;
+    }
+    .tarjetas{
+        width: 80%;
+        margin-left: 55px;
+        margin-bottom: 50px;
+        flex: 1;
+    }
+    .tamaño{
+        margin-left: 240px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }  
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px){
+    .logo{
+        margin-left: 0px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .index{
+        background-size: 100%;
+        background-size: cover;
+        background-repeat:no-repeat  ;
+        background-attachment:fixed ;
+    }
+    .caja{
+        margin-top: 60px;
+        margin-left: 18px;
+        width: 450px;
+        height: 250px;
+    }
+    .foto{
+        left: 45px;
+        margin-top: 240px;
+    }
+    .carrusel{
+        margin-top: 500px;
+    }
+    .caja_2{
+        width: 450px;
+        height: 250px;
+        margin-left: 18px;
+        margin-top: 55px;
+    }
+    .foto_2{
+        right: 34px;
+        margin-top: 1770px;
+    }
+    footer{
+        margin-top: 500px;
+    }
+    .tamaño{
+        margin-left: 103px;
+    }
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+    
+}
+

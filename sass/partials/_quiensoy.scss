@@ -1,0 +1,68 @@
+.caja{
+    width: 500px;
+    height: 280px;
+    background-color: $secondaryColor;
+    margin: 20px;
+    margin-left: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 0,10s; 
+
+    .caja h1{
+        text-align: center;   
+    }
+
+    .titulo{
+        font-family: $fontdancingscript;
+        font-size: 40px;
+        text-align: center;
+        }
+
+        .texto{
+            font-family: $fontroboto; 
+            color: black;
+        }
+}
+
+.foto{
+    Justify-content:flex-end; 
+    position: absolute;
+    left: 800px;
+    top: 250px;
+    bottom: 10px;
+    -webkit-animation:swing-in-top-fwd .8s cubic-bezier(.175,.885,.32,1.275) both;
+    animation:swing-in-top-fwd .7s cubic-bezier(.175,.885,.32,1.275) both;
+    animation-delay: 1s;
+}
+
+.carrusel{
+    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 3s;
+}
+
+.caja_2{
+        margin-left: 700px;
+        animation-delay: 3s; 
+    
+    .caja h2{
+        text-align: center;   
+    }
+}
+
+.foto_2{
+    left: 100px;
+    top: 10px;
+    margin-top: 1450px;
+    animation-delay: 4s;
+}
+
+.titulo{
+    font-family: $fontdancingscript;
+    font-size: 40px;
+    text-align: center;
+    }

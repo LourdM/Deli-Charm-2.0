@@ -1,0 +1,23 @@
+ 
+body{
+    background-color: rgb(236, 201, 207);
+    background-attachment: fixed;
+}
+.menu{
+    background-image:url(./../img/pexels-photo-306070.jpeg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family:$fontdancingscript;
+
+    ul li{
+        margin-right: 110px;
+        margin-left: 40px;
+    }
+
+}
+.m_c{
+    margin-bottom: 0px;
+ }

@@ -1,0 +1,25 @@
+.index{
+    background-image: url("./../img/estrella.gif");
+    background-size: 100%;
+    background-attachment: fixed;
+    .opciones a{
+        cursor: default;
+        transition: color 300ms;
+        cursor: pointer;
+        font-size: 30px;
+    }
+     
+    .opciones a:hover{
+        color:  $mainColor;
+    }
+}
+
+.logo{
+    margin-left: 400px;
+    margin-top: 0px;
+}
+.nombre{
+    color: black;
+    font-size: 80px;
+    .titulo{}
+}
