@@ -1,6 +1,5 @@
 .caja{
-    width: 500px;
-    height: 280px;
+    @include tamanos(500px,280px);
     background-color: $secondaryColor;
     margin: 20px;
     margin-left: 100px;

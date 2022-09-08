@@ -1,5 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap");
+.instagram, .facebook, .twitter {
+  width: 100px;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+}
+.instagram:hover, .facebook:hover, .twitter:hover {
+  background-color: white;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -265,6 +275,18 @@ body {
 footer {
   background-color: rgb(245, 167, 180);
   text-align: center;
+}
+
+.facebook {
+  background-color: blue;
+}
+
+.instagram {
+  background-color: rgb(230, 101, 235);
+}
+
+.twitter {
+  background-color: rgb(108, 197, 241);
 }
 
 @-webkit-keyframes slide-in-bck-center {

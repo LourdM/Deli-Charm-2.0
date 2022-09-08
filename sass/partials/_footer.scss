@@ -2,3 +2,23 @@ footer{
     background-color:$mainColor;
     text-align: center;
 }
+
+$redes:(
+    facebook: blue,
+    instagram:rgb(230, 101, 235),
+    twitter:rgb(108, 197, 241),
+);
+
+.facebook{
+    background-color: blue;
+}
+.instagram{
+    background-color: rgb(230, 101, 235);
+}
+.twitter{
+    background-color:rgb(108, 197, 241);
+}
+
+.instagram, .facebook, .twitter{
+    @extend %iconitos;
+}

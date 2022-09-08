@@ -17,7 +17,13 @@
 }
 
 .mensaje{
-    margin-top: 15px;
-    margin-right: 80px;
-    margin-left: 10px;
+    @include margin(15px,80px,10px )
+}
+
+@mixin margin ($alto, $derecha, $izquierda, $abajo) {
+    margin-top:$alto;
+    margin-right:$derecha;
+    margin-left:$izquierda;
+    margin-bottom: $abajo;
+    
 }
