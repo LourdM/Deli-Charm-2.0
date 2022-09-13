@@ -109,7 +109,10 @@ body {
   font-size: 40px;
   text-align: center;
 }
-
+.img{
+  height:400px;
+  width:400px;
+}
 .titulo_2 {
   font-family: "Dancing Script";
   margin-top: 30px;
@@ -484,32 +487,39 @@ footer {
   }
   .caja {
     margin-top: 60px;
-    margin-left: 18px;
-    width: 450px;
-    height: 250px;
+    margin-left: 15px;
+    width: 350px;
+    height: 350px;
   }
   .foto {
-    left: 45px;
-    margin-top: 240px;
+    left: 40px;
+    margin-top: 320px;
   }
+  .img{
+    height:300px;
+    width:300px;
+}
   .carrusel {
-    margin-top: 500px;
+    margin-top: 370px;
   }
   .caja_2 {
-    width: 450px;
-    height: 250px;
-    margin-left: 18px;
-    margin-top: 55px;
+    width: 350px;
+    height: 350px;
+    margin-left: 15px;
+    margin-top: 46px;
   }
   .foto_2 {
     right: 34px;
-    margin-top: 1770px;
+    margin-top: 1820px;
   }
   footer {
-    margin-top: 500px;
+    margin-top: 360px;
   }
-  .tamaño {
-    margin-left: 103px;
+  .tarjetas {
+    margin-left: 39px;
+  }
+  .tamaño{
+    margin-left: 39px;
   }
   .contenedor {
     grid-template-columns: 1fr;

@@ -4,6 +4,8 @@
         background-size: cover;
         background-repeat:no-repeat  ;
         background-attachment:fixed ;
+        text-align: center;
+        align-items: center;
     }
     .logo{
         margin-left: 120px;
@@ -53,49 +55,56 @@
 
 
 @media screen and (max-width: 480px){
-    .logo{
+    .logo {
         margin-left: 0px;
         background-size: 100%;
         background-repeat: no-repeat;
-    }
-    .index{
+      }
+      .index {
         background-size: 100%;
         background-size: cover;
-        background-repeat:no-repeat  ;
-        background-attachment:fixed ;
-    }
-    .caja{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .caja {
         margin-top: 60px;
-        margin-left: 18px;
-        width: 450px;
-        height: 250px;
+        margin-left: 15px;
+        width: 350px;
+        height: 350px;
+      }
+      .foto {
+        left: 40px;
+        margin-top: 320px;
+      }
+      .img{
+        height:300px;
+        width:300px;
     }
-    .foto{
-        left: 45px;
-        margin-top: 240px;
-    }
-    .carrusel{
-        margin-top: 500px;
-    }
-    .caja_2{
-        width: 450px;
-        height: 250px;
-        margin-left: 18px;
-        margin-top: 55px;
-    }
-    .foto_2{
+      .carrusel {
+        margin-top: 370px;
+      }
+      .caja_2 {
+        width: 350px;
+        height: 350px;
+        margin-left: 15px;
+        margin-top: 46px;
+      }
+      .foto_2 {
         right: 34px;
-        margin-top: 1770px;
-    }
-    footer{
-        margin-top: 500px;
-    }
-    .tamaño{
-        margin-left: 103px;
-    }
-    .contenedor{
+        margin-top: 1820px;
+      }
+      footer {
+        margin-top: 360px;
+      }
+      .tarjetas {
+        margin-left: 39px;
+      }
+      .tamaño{
+        margin-left: 39px;
+      }
+      .contenedor {
         grid-template-columns: 1fr;
-    }
+      }
     
 }
 
