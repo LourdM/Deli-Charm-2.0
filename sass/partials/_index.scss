@@ -13,10 +13,16 @@
         color:  $mainColor;
     }
 }
+.main_index{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .logo{
-    margin-left: 400px;
-    margin-top: 0px;
+    width:550px; 
+    height:400px;
 }
 .nombre{
     color: black;

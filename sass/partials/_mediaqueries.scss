@@ -7,31 +7,17 @@
         text-align: center;
         align-items: center;
     }
-    .logo{
-        margin-left: 120px;
+  
+    .principal{
+      flex-direction: column;
+      
     }
-
-    .caja{
-        margin-left: 130px;
-        margin-top: 50px;
+   
+    .carrusel {
+      margin-top: 100px;
     }
-    .foto{
-        left: 183px;
-        margin-top: 260px;
-    }
-    .carrusel{
-        margin-top: 500px;
-    }
-    .caja_2{
-        margin-left: 130px;
-        margin-top: 50px;
-    }
-    .foto_2{
-        margin-top: 1840px;
-        right: 183px;
-    }
-    footer{
-        margin-top: 500px;
+    footer {
+      margin-top: 100px;
     }
     .tarjeta{
         display:inline;
@@ -55,47 +41,18 @@
 
 
 @media screen and (max-width: 480px){
-    .logo {
-        margin-left: 0px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-      }
       .index {
         background-size: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-      .caja {
-        margin-top: 60px;
-        margin-left: 15px;
-        width: 350px;
-        height: 350px;
-      }
-      .foto {
-        left: 40px;
-        margin-top: 320px;
-      }
-      .img{
-        height:300px;
-        width:300px;
-    }
       .carrusel {
-        margin-top: 370px;
-      }
-      .caja_2 {
-        width: 350px;
-        height: 350px;
-        margin-left: 15px;
-        margin-top: 46px;
-      }
-      .foto_2 {
-        right: 34px;
-        margin-top: 1820px;
-      }
-      footer {
-        margin-top: 360px;
-      }
+    margin-top: 100px;
+  }
+  footer {
+    margin-top: 100px;
+  }
       .tarjetas {
         margin-left: 39px;
       }

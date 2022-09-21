@@ -1,12 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap");
-.instagram, .facebook, .twitter {
-  width: 100px;
-  border-radius: 5px;
+.fa-instagram, .fa-facebook, .fa-twitter {
+  border-radius: 20px;
   display: inline-flex;
   justify-content: center;
 }
-.instagram:hover, .facebook:hover, .twitter:hover {
+.fa-instagram:hover, .fa-facebook:hover, .fa-twitter:hover {
   background-color: white;
 }
 
@@ -18,12 +17,12 @@
 }
 
 body {
-  background-color: rgb(236, 201, 207);
+  background-color:beige;
   background-attachment: fixed;
 }
 
 .menu {
-  background-image: url(./../img/pexels-photo-306070.jpeg);
+  background-color: rgb(245, 179, 190);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,33 +30,65 @@ body {
   font-size: 30px;
   font-family: "Dancing Script";
 }
-.menu ul li {
-  margin-right: 110px;
-  margin-left: 40px;
-}
 
-.m_c {
+.m_c{
   margin-bottom: 0px;
 }
 
+.navbar-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-link:after{
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+.nav-link:hover:after{
+  width: 100%;
+  right: 0;
+}
+
+
+
+.principal{
+  display: flex;
+  align-items: center;
+  margin-block: 3rem;
+  gap: 2rem;
+}
+
+.principalfoto,
+.principalcaja{
+  width: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .caja {
-  width: 500px;
-  height: 280px;
   background-color: rgb(213, 236, 189);
-  margin: 20px;
-  margin-left: 100px;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  text-align: center;
   padding: 20px;
   border-radius: 30px;
+  width: 50%;
+
   -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 0, 10s;
           animation-delay: 0, 10s;
 }
-.caja .caja h1 {
-  text-align: center;
-}
+
 .caja .titulo {
   font-family: "Dancing Script";
   font-size: 40px;
@@ -69,16 +100,15 @@ body {
 }
 
 .foto {
-  Justify-content: flex-end;
-  position: absolute;
-  left: 800px;
-  top: 250px;
-  bottom: 10px;
+  max-width: 100%;
+  width: 300px;
+  border-radius: 200px;
   -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
+
 
 .carrusel {
   -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -87,32 +117,13 @@ body {
           animation-delay: 3s;
 }
 
-.caja_2 {
-  margin-left: 700px;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.caja_2 .caja h2 {
-  text-align: center;
-}
-
-.foto_2 {
-  left: 100px;
-  top: 10px;
-  margin-top: 1450px;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
 
 .titulo {
   font-family: "Dancing Script";
   font-size: 40px;
   text-align: center;
 }
-.img{
-  height:400px;
-  width:400px;
-}
+
 .titulo_2 {
   font-family: "Dancing Script";
   margin-top: 30px;
@@ -128,7 +139,7 @@ body {
   display: flex;
   padding: 60px;
   gap: 40px;
-  background-color: rgb(236, 201, 207);
+  background-color: beige;
 }
 .tarjeta .tarjetas {
   background-color: rgb(213, 236, 189);
@@ -255,6 +266,7 @@ body {
   background-image: url("./../img/estrella.gif");
   background-size: 100%;
   background-attachment: fixed;
+  
 }
 .index .opciones a {
   cursor: default;
@@ -266,9 +278,18 @@ body {
   color: rgb(245, 167, 180);
 }
 
-.logo {
-  margin-left: 400px;
-  margin-top: 0px;
+.navbar_index{
+  position: absolute;
+  width: 100%;
+
+}
+
+.main_index{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .nombre {
@@ -280,17 +301,24 @@ footer {
   text-align: center;
 }
 
-.facebook {
+.fa-facebook{
   background-color: blue;
 }
 
-.instagram {
+.fa-instagram {
   background-color: rgb(230, 101, 235);
 }
 
-.twitter {
+.fa-twitter {
   background-color: rgb(108, 197, 241);
 }
+
+.iconos{
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
 
 @-webkit-keyframes slide-in-bck-center {
   0% {
@@ -430,37 +458,24 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  .logo {
-    margin-left: 120px;
+  
+  .principal{
+    flex-direction: column;
+    
   }
-  .caja {
-    margin-left: 130px;
-    margin-top: 50px;
-  }
-  .foto {
-    left: 183px;
-    margin-top: 260px;
-  }
+ 
   .carrusel {
-    margin-top: 500px;
-  }
-  .caja_2 {
-    margin-left: 130px;
-    margin-top: 50px;
-  }
-  .foto_2 {
-    margin-top: 1840px;
-    right: 183px;
+    margin-top: 100px;
   }
   footer {
-    margin-top: 500px;
+    margin-top: 100px;
   }
   .tarjeta {
     display: inline;
   }
   .tarjetas {
     width: 80%;
-    margin-left: 55px;
+    margin-left: 85px;
     margin-bottom: 50px;
     flex: 1;
   }
@@ -474,52 +489,28 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
-  .logo {
-    margin-left: 0px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
+ 
   .index {
     background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  .caja {
-    margin-top: 60px;
-    margin-left: 15px;
-    width: 350px;
-    height: 350px;
-  }
-  .foto {
-    left: 40px;
-    margin-top: 320px;
-  }
-  .img{
-    height:300px;
-    width:300px;
-}
   .carrusel {
-    margin-top: 370px;
-  }
-  .caja_2 {
-    width: 350px;
-    height: 350px;
-    margin-left: 15px;
-    margin-top: 46px;
-  }
-  .foto_2 {
-    right: 34px;
-    margin-top: 1820px;
+    margin-top: 100px;
   }
   footer {
-    margin-top: 360px;
+    margin-top: 100px;
   }
+  .tarjeta {
+    display: inline;
+  }
+  
   .tarjetas {
     margin-left: 39px;
   }
   .tamaño{
-    margin-left: 39px;
+    margin-left: 65px;
   }
   .contenedor {
     grid-template-columns: 1fr;

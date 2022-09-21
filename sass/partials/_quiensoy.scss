@@ -1,72 +1,56 @@
-.caja{
-    @include tamanos(500px,280px);
-    background-color: $secondaryColor;
-    margin: 20px;
-    margin-left: 100px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+.principal{
+    display: flex;
+  align-items: center;
+  margin-block: 3rem;
+  gap: 2rem;
+
+  .principalfoto,
+  .principalcaja{
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .caja{
+    background-color: rgb(213, 236, 189);
+    text-align: center;
     padding: 20px;
     border-radius: 30px;
-    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
-    animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
-    animation-delay: 0,10s; 
-
-    .caja h1{
-        text-align: center;   
-    }
-
-    .titulo{
-        font-family: $fontdancingscript;
-        font-size: 40px;
-        text-align: center;
-        }
-
-        .texto{
-            font-family: $fontroboto; 
-            color: black;
-        }
-}
-
-.foto{
-    Justify-content:flex-end; 
-    position: absolute;
-    left: 800px;
-    top: 250px;
-    bottom: 10px;
-    -webkit-animation:swing-in-top-fwd .8s cubic-bezier(.175,.885,.32,1.275) both;
-    animation:swing-in-top-fwd .7s cubic-bezier(.175,.885,.32,1.275) both;
-    animation-delay: 1s;
-}
-
-.carrusel{
-    -webkit-animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
-    animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
-    animation-delay: 3s;
-}
-
-.caja_2{
-        margin-left: 700px;
-        animation-delay: 3s; 
-    
-    .caja h2{
-        text-align: center;   
-    }
-}
-
-.foto_2{
-    left: 100px;
-    top: 10px;
-    margin-top: 1450px;
-    animation-delay: 4s;
-}
-
-.titulo{
-    font-family: $fontdancingscript;
+    width: 50%;
+  
+    -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation-delay: 0, 10s;
+            animation-delay: 0, 10s;
+  }
+  .titulo{
+    font-family: "Dancing Script";
     font-size: 40px;
-    text-align: center;
-    }
+    text-align: center
+  }
 
-.img{
-    height:400px;
-    width:400px;
+  .texto{
+    font-family: "Roboto", sans-serif;
+  color: black;
+  }
+
+  .foto{
+    max-width: 100%;
+    width: 300px;
+    border-radius: 200px;
+    -webkit-animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
 }
+
+.carrusel {
+    -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+
+

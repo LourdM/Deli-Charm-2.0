@@ -11,13 +11,11 @@ body{
     margin-bottom: 20px;
     font-size: 30px;
     font-family:$fontdancingscript;
-
-    ul li{
-        margin-right: 110px;
-        margin-left: 40px;
-    }
-
 }
-.m_c{
-    margin-bottom: 0px;
- }
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
